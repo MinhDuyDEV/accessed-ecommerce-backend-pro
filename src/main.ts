@@ -18,6 +18,10 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
+  app.enableCors({
+    origin: ['*'],
+    credentials: true,
+  });
 
   await app.listen(port);
 }
