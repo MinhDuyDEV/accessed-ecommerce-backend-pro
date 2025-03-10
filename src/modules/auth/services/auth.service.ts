@@ -19,6 +19,8 @@ import { RegisterDto } from '../dto/auth/register.dto';
 import { access_token_private_key } from 'src/common/utils';
 import { Request } from 'express';
 import { PermissionCacheService } from './permission-cache.service';
+import { CartsService } from 'src/modules/carts/carts.service';
+
 @Injectable()
 export class AuthService {
   constructor(
@@ -27,6 +29,7 @@ export class AuthService {
     private configService: ConfigService,
     private refreshTokenService: RefreshTokenService,
     private permissionCacheService: PermissionCacheService,
+    private cartsService: CartsService,
     @InjectRepository(Role)
     private roleRepository: Repository<Role>,
   ) {}
@@ -51,6 +54,11 @@ export class AuthService {
 
     if (!user) {
       throw new UnauthorizedException('Invalid credentials');
+    }
+
+    // Merge giỏ hàng nếu có sessionId
+    if (loginDto.sessionId) {
+      await this.cartsService.mergeCartsOnLogin(loginDto.sessionId, user.id);
     }
 
     return this.generateTokens(user, req);

@@ -24,6 +24,7 @@ import { JwtRefreshGuard } from './guards/jwt-refresh.guard';
 import { RolesGuard } from './guards/roles.guard';
 import { PermissionsGuard } from './guards/permission.guard';
 import { PolicyGuard } from './guards/policy.guard';
+import { CartsModule } from '../carts/carts.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { PolicyGuard } from './guards/policy.guard';
     JwtModule.register({}),
     UsersModule,
     SharedModule,
+    CartsModule,
   ],
   controllers: [
     AuthController,
