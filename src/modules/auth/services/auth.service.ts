@@ -101,13 +101,14 @@ export class AuthService {
   }
 
   private async generateTokens(user: User, req: Request): Promise<TokensDto> {
-    // Lấy user với roles và permissions để đưa vào token
+    // Lấy user với roles để đưa vào token
     const userWithRoles = await this.usersService.findOneWithRoles(user.id);
 
-    // Tạo danh sách roles và permissions cho token
+    // Tạo danh sách roles cho token
     const roles = userWithRoles.roles.map((role) => role.name);
-    const permissions = new Set<string>();
 
+    // Tạo danh sách permissions và lưu vào Redis
+    const permissions = new Set<string>();
     for (const role of userWithRoles.roles) {
       for (const permission of role.permissions || []) {
         permissions.add(permission.code);
@@ -118,13 +119,14 @@ export class AuthService {
     // Trước tiên, xóa cache cũ nếu có
     await this.permissionCacheService.invalidateUserPermissions(user.id);
 
-    // Lưu permissions mới vào Redis (được thực hiện khi gọi getUserPermissions lần đầu)
+    // Lưu permissions mới vào Redis bằng cách gọi getUserPermissions
     await this.permissionCacheService.getUserPermissions(user.id);
 
+    // Token chỉ chứa thông tin cần thiết (không chứa permissions)
     const payload = {
       sub: user.id,
       email: user.email,
-      roles,
+      roles, // Vẫn giữ roles vì thường ít hơn permissions
       isVerifiedSeller: user.isVerifiedSeller,
     };
 

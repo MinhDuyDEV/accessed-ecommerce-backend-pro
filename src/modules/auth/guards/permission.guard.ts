@@ -31,8 +31,14 @@ export class PermissionsGuard implements CanActivate {
       throw new ForbiddenException('User not authenticated');
     }
 
+    const userId = user.sub || user.id;
+
+    if (!userId) {
+      throw new ForbiddenException('User ID not found');
+    }
+
     return this.permissionCacheService.hasPermissions(
-      user.sub,
+      userId,
       requiredPermissions,
     );
   }

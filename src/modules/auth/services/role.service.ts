@@ -126,8 +126,18 @@ export class RoleService {
     if (!role || !permission) {
       throw new NotFoundException('Role or permission not found');
     }
+
     if (!role.permissions) {
       role.permissions = [];
+    }
+
+    // Kiểm tra xem permission đã tồn tại trong role chưa
+    const existingPermission = role.permissions.find(
+      (p) => p.id === permissionId,
+    );
+
+    if (existingPermission) {
+      throw new ConflictException('Permission already exists in this role');
     }
 
     role.permissions.push(permission);
@@ -147,7 +157,33 @@ export class RoleService {
     permissionId: string,
   ): Promise<Role> {
     const role = await this.findOne(roleId);
-    role.permissions = role.permissions.filter((p) => p.id !== permissionId);
-    return this.roleRepository.save(role);
+
+    if (!role) {
+      throw new NotFoundException(`Role with ID ${roleId} not found`);
+    }
+
+    if (!role.permissions) {
+      throw new NotFoundException('Role has no permissions');
+    }
+
+    // Kiểm tra xem permission có tồn tại trong role không
+    const permissionIndex = role.permissions.findIndex(
+      (p) => p.id === permissionId,
+    );
+
+    if (permissionIndex === -1) {
+      throw new NotFoundException('Permission not found in this role');
+    }
+
+    role.permissions.splice(permissionIndex, 1);
+    await this.roleRepository.save(role);
+
+    // Xóa cache của tất cả users có role này
+    const usersWithRole = await this.usersService.findByRoleId(roleId);
+    for (const user of usersWithRole) {
+      await this.permissionCacheService.invalidateUserPermissions(user.id);
+    }
+
+    return role;
   }
 }
