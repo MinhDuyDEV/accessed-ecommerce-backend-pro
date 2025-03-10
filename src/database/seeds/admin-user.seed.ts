@@ -1,7 +1,7 @@
 import { Connection } from 'typeorm';
-import { User, UserStatus } from '../../modules/users/entities/user.entity';
-import { Role } from '../../modules/auth/entities/role.entity';
 import * as bcrypt from 'bcrypt';
+import { User, UserStatus } from 'src/modules/users/entities/user.entity';
+import { Role } from 'src/modules/auth/entities/role.entity';
 
 export const seedAdminUser = async (connection: Connection) => {
   const userRepository = connection.getRepository(User);

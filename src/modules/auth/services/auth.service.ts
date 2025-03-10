@@ -7,17 +7,18 @@ import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { RefreshTokenService } from './refresh-token.service';
-import { LoginDto } from '../dto/auth/login.dto';
-import { RegisterDto } from '../dto/auth/register.dto';
-import { TokensDto } from '../dto/auth/tokens.dto';
-import { User } from '../../users/entities/user.entity';
-import { Role } from '../entities/role.entity';
-import { Request } from 'express';
-import { access_token_private_key } from '../../../common/utils/keys.util';
+
 import * as bcrypt from 'bcrypt';
 import { UsersService } from 'src/modules/users/services/users.service';
-
+import { RefreshTokenService } from './refresh-token.service';
+import { Role } from '../entities/role.entity';
+import { User } from 'src/modules/users/entities/user.entity';
+import { TokensDto } from '../dto/auth/tokens.dto';
+import { LoginDto } from '../dto/auth/login.dto';
+import { RegisterDto } from '../dto/auth/register.dto';
+import { access_token_private_key } from 'src/common/utils';
+import { Request } from 'express';
+import { PermissionCacheService } from './permission-cache.service';
 @Injectable()
 export class AuthService {
   constructor(
@@ -25,6 +26,7 @@ export class AuthService {
     private jwtService: JwtService,
     private configService: ConfigService,
     private refreshTokenService: RefreshTokenService,
+    private permissionCacheService: PermissionCacheService,
     @InjectRepository(Role)
     private roleRepository: Repository<Role>,
   ) {}
@@ -112,11 +114,17 @@ export class AuthService {
       }
     }
 
+    // Lưu permissions vào Redis
+    // Trước tiên, xóa cache cũ nếu có
+    await this.permissionCacheService.invalidateUserPermissions(user.id);
+
+    // Lưu permissions mới vào Redis (được thực hiện khi gọi getUserPermissions lần đầu)
+    await this.permissionCacheService.getUserPermissions(user.id);
+
     const payload = {
       sub: user.id,
       email: user.email,
       roles,
-      permissions: Array.from(permissions),
       isVerifiedSeller: user.isVerifiedSeller,
     };
 

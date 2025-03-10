@@ -8,8 +8,8 @@ import {
   JoinColumn,
   BeforeInsert,
 } from 'typeorm';
-import { User } from '../../users/entities/user.entity';
 import * as bcrypt from 'bcrypt';
+import { User } from 'src/modules/users/entities/user.entity';
 
 @Entity('refresh_tokens')
 export class RefreshToken {

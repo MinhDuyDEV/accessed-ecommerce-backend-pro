@@ -16,7 +16,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         database: configService.get<string>('database.database'),
         entities: [__dirname + '/../**/*.entity{.ts,.js}'],
         synchronize: configService.get<boolean>('database.synchronize'),
-        logging: false,
+        logging: true,
         // logging: configService.get('environment') === 'development',
       }),
     }),

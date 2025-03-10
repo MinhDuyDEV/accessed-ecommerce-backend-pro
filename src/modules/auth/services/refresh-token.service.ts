@@ -2,11 +2,11 @@ import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { LessThan, Repository } from 'typeorm';
 import { RefreshToken } from '../entities/refresh-token.entity';
-import { User } from '../../users/entities/user.entity';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
 import { Request } from 'express';
-import { refresh_token_private_key } from '../../../common/utils/keys.util';
+import { User } from 'src/modules/users/entities/user.entity';
+import { refresh_token_private_key } from 'src/common/utils';
 
 @Injectable()
 export class RefreshTokenService {

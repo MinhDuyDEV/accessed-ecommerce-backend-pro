@@ -1,10 +1,7 @@
+import { Permission } from 'src/modules/auth/entities/permission.entity';
+import { Policy, PolicyEffect } from 'src/modules/auth/entities/policy.entity';
+import { Role } from 'src/modules/auth/entities/role.entity';
 import { Connection } from 'typeorm';
-import { Role } from '../../modules/auth/entities/role.entity';
-import { Permission } from '../../modules/auth/entities/permission.entity';
-import {
-  Policy,
-  PolicyEffect,
-} from '../../modules/auth/entities/policy.entity';
 
 export const seedRBAC = async (connection: Connection) => {
   // Tạo permissions

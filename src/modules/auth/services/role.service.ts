@@ -9,6 +9,8 @@ import { Role } from '../entities/role.entity';
 import { Permission } from '../entities/permission.entity';
 import { CreateRoleDto } from '../dto/role/create-role.dto';
 import { UpdateRoleDto } from '../dto/role/update-role.dto';
+import { PermissionCacheService } from './permission-cache.service';
+import { UsersService } from '@/modules/users/services/users.service';
 
 @Injectable()
 export class RoleService {
@@ -17,6 +19,8 @@ export class RoleService {
     private roleRepository: Repository<Role>,
     @InjectRepository(Permission)
     private permissionRepository: Repository<Permission>,
+    private permissionCacheService: PermissionCacheService,
+    private usersService: UsersService,
   ) {}
 
   async create(createRoleDto: CreateRoleDto): Promise<Role> {
@@ -119,16 +123,20 @@ export class RoleService {
       where: { id: permissionId },
     });
 
-    if (!permission) {
-      throw new NotFoundException(
-        `Permission with ID ${permissionId} not found`,
-      );
+    if (!role || !permission) {
+      throw new NotFoundException('Role or permission not found');
+    }
+    if (!role.permissions) {
+      role.permissions = [];
     }
 
-    const hasPermission = role.permissions.some((p) => p.id === permission.id);
-    if (!hasPermission) {
-      role.permissions.push(permission);
-      await this.roleRepository.save(role);
+    role.permissions.push(permission);
+    await this.roleRepository.save(role);
+
+    // Xóa cache của tất cả users có role này
+    const usersWithRole = await this.usersService.findByRoleId(roleId);
+    for (const user of usersWithRole) {
+      await this.permissionCacheService.invalidateUserPermissions(user.id);
     }
 
     return role;

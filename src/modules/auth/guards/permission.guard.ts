@@ -6,12 +6,16 @@ import {
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { PERMISSIONS_KEY } from '../decorators/permissions.decorator';
+import { PermissionCacheService } from '../services/permission-cache.service';
 
 @Injectable()
 export class PermissionsGuard implements CanActivate {
-  constructor(private reflector: Reflector) {}
+  constructor(
+    private reflector: Reflector,
+    private permissionCacheService: PermissionCacheService,
+  ) {}
 
-  canActivate(context: ExecutionContext): boolean {
+  async canActivate(context: ExecutionContext): Promise<boolean> {
     const requiredPermissions = this.reflector.getAllAndOverride<string[]>(
       PERMISSIONS_KEY,
       [context.getHandler(), context.getClass()],
@@ -27,18 +31,9 @@ export class PermissionsGuard implements CanActivate {
       throw new ForbiddenException('User not authenticated');
     }
 
-    const userPermissions = new Set<string>();
-
-    if (user.roles) {
-      for (const role of user.roles) {
-        for (const permission of role.permissions || []) {
-          userPermissions.add(permission.code);
-        }
-      }
-    }
-
-    return requiredPermissions.every((permission) =>
-      userPermissions.has(permission),
+    return this.permissionCacheService.hasPermissions(
+      user.sub,
+      requiredPermissions,
     );
   }
 }

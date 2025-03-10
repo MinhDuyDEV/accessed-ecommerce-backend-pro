@@ -8,12 +8,12 @@ import {
   Delete,
   UseGuards,
 } from '@nestjs/common';
+import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { PermissionsGuard } from '../guards/permission.guard';
 import { PolicyService } from '../services/policy.service';
+import { Permissions } from '../decorators/permissions.decorator';
 import { CreatePolicyDto } from '../dto/policy/create-policy.dto';
 import { UpdatePolicyDto } from '../dto/policy/update-policy.dto';
-import { JwtAuthGuard } from '../guards/jwt-auth.guard';
-import { Permissions } from '../decorators/permissions.decorator';
-import { PermissionsGuard } from '../guards/permission.guard';
 
 @Controller('policies')
 @UseGuards(JwtAuthGuard, PermissionsGuard)

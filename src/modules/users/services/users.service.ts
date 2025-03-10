@@ -84,6 +84,14 @@ export class UsersService {
     return user;
   }
 
+  async findByRoleId(roleId: string): Promise<User[]> {
+    return this.usersRepository
+      .createQueryBuilder('user')
+      .innerJoin('user.roles', 'role')
+      .where('role.id = :roleId', { roleId })
+      .getMany();
+  }
+
   async update(id: string, updateUserDto: UpdateUserDto): Promise<User> {
     const user = await this.findOne(id);
 
