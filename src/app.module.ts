@@ -3,17 +3,21 @@ import { ConfigModule } from './config/config.module';
 import { DatabaseModule } from './database/database.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
+import { ShopsModule } from './modules/shops/shops.module';
 import { RedisModule } from './modules/redis/redis.module';
 import { CategoriesModule } from './modules/categories/categories.module';
+import { ProductsModule } from './modules/products/products.module';
 
 @Module({
   imports: [
     ConfigModule,
     DatabaseModule,
+    RedisModule,
     AuthModule,
     UsersModule,
-    RedisModule,
+    ShopsModule,
     CategoriesModule,
+    ProductsModule,
   ],
 })
 export class AppModule {}

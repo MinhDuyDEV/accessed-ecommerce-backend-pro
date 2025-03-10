@@ -216,6 +216,28 @@ export const seedRBAC = async (connection: Connection) => {
       description: 'Can delete addresses',
       code: 'address:delete',
     },
+
+    // Category permissions
+    {
+      name: 'Create Category',
+      description: 'Can create categories',
+      code: 'category:create',
+    },
+    {
+      name: 'Read Category',
+      description: 'Can read category details',
+      code: 'category:read',
+    },
+    {
+      name: 'Update Category',
+      description: 'Can update categories',
+      code: 'category:update',
+    },
+    {
+      name: 'Delete Category',
+      description: 'Can delete categories',
+      code: 'category:delete',
+    },
   ];
 
   const permissionRepository = connection.getRepository(Permission);
@@ -256,6 +278,7 @@ export const seedRBAC = async (connection: Connection) => {
         p.code === 'shop:manage-settings' ||
         p.code === 'shop:view-analytics' ||
         p.code === 'shop:manage-categories' ||
+        p.code === 'category:read' ||
         p.code === 'order:read' ||
         p.code === 'order:update',
     );
