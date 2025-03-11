@@ -297,6 +297,7 @@ export const seedRBAC = async (connection: Connection) => {
       (p) =>
         p.code === 'product:read' ||
         p.code === 'shop:read' ||
+        p.code === 'category:read' ||
         p.code === 'order:create' ||
         p.code === 'order:read' ||
         p.code === 'address:create' ||

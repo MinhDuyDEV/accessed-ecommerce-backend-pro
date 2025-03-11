@@ -11,7 +11,7 @@ import {
 } from 'typeorm';
 
 @Entity('categories')
-@Tree('nested-set')
+@Tree('materialized-path')
 export class Category {
   @PrimaryGeneratedColumn('uuid')
   id: string;

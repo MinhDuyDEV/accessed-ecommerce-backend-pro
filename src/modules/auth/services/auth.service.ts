@@ -108,6 +108,10 @@ export class AuthService {
     await this.refreshTokenService.revokeAllUserRefreshTokens(userId);
   }
 
+  async getUserWithPermissions(userId: string): Promise<User> {
+    return this.usersService.findOneWithRoles(userId);
+  }
+
   private async generateTokens(user: User, req: Request): Promise<TokensDto> {
     // Lấy user với roles để đưa vào token
     const userWithRoles = await this.usersService.findOneWithRoles(user.id);

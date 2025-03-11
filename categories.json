@@ -1,0 +1,2094 @@
+[
+  {
+    "name": "Thời Trang Nữ",
+    "slug": "thoi-trang-nu",
+    "description": "Danh mục các sản phẩm thời trang dành cho nữ",
+    "image": null,
+    "order": 1,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Áo",
+        "slug": "ao-nu",
+        "description": "Các loại áo dành cho nữ",
+        "image": null,
+        "order": 1,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Áo hai dây và ba lỗ",
+            "slug": "ao-hai-day-va-ba-lo-nu",
+            "description": "Áo hai dây và ba lỗ dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo ống",
+            "slug": "ao-ong-nu",
+            "description": "Áo ống dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Áo thun",
+            "slug": "ao-thun-nu",
+            "description": "Áo thun dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Áo sơ mi",
+            "slug": "ao-so-mi-nu",
+            "description": "Áo sơ mi dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Áo polo",
+            "slug": "ao-polo-nu",
+            "description": "Áo polo dành cho nữ",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          },
+          {
+            "name": "Áo liền thân",
+            "slug": "ao-lien-than-nu",
+            "description": "Áo liền thân dành cho nữ",
+            "image": null,
+            "order": 6,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "ao-nu-khac",
+            "description": "Các loại áo khác dành cho nữ",
+            "image": null,
+            "order": 7,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Quần",
+        "slug": "quan-nu",
+        "description": "Các loại quần dành cho nữ",
+        "image": null,
+        "order": 2,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Quần legging",
+            "slug": "quan-legging-nu",
+            "description": "Quần legging dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Quần dài",
+            "slug": "quan-dai-nu",
+            "description": "Quần dài dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "quan-nu-khac",
+            "description": "Các loại quần khác dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Quần đùi",
+        "slug": "quan-dui-nu",
+        "description": "Các loại quần đùi dành cho nữ",
+        "image": null,
+        "order": 3,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Quần đùi",
+            "slug": "quan-dui-nu-basic",
+            "description": "Quần đùi cơ bản dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Quần váy",
+            "slug": "quan-vay-nu",
+            "description": "Quần váy dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "quan-dui-nu-khac",
+            "description": "Các loại quần đùi khác dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Váy",
+        "slug": "vay-nu",
+        "description": "Các loại váy dành cho nữ",
+        "image": null,
+        "order": 4,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Quần jeans",
+            "slug": "quan-jeans-nu",
+            "description": "Quần jeans dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Đầm",
+            "slug": "dam-nu",
+            "description": "Đầm dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Váy cưới",
+            "slug": "vay-cuoi-nu",
+            "description": "Váy cưới dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Đồ liền thân",
+            "slug": "do-lien-than-nu",
+            "description": "Đồ liền thân dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Đồ bay (Jumpsuits)",
+            "slug": "do-bay-jumpsuits-nu",
+            "description": "Đồ bay (Jumpsuits) dành cho nữ",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          },
+          {
+            "name": "Đồ bay ngắn (playsuits)",
+            "slug": "do-bay-ngan-playsuits-nu",
+            "description": "Đồ bay ngắn (Playsuits) dành cho nữ",
+            "image": null,
+            "order": 6,
+            "isActive": true
+          },
+          {
+            "name": "Quần yếm",
+            "slug": "quan-yem-nu",
+            "description": "Quần yếm dành cho nữ",
+            "image": null,
+            "order": 7,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "vay-nu-khac",
+            "description": "Các loại váy khác dành cho nữ",
+            "image": null,
+            "order": 8,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Áo khoác",
+        "slug": "ao-khoac-nu",
+        "description": "Các loại áo khoác dành cho nữ",
+        "image": null,
+        "order": 5,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Áo khoác mùa đông",
+            "slug": "ao-khoac-mua-dong-nu",
+            "description": "Áo khoác mùa đông dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo choàng",
+            "slug": "ao-choang-nu",
+            "description": "Áo choàng dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Áo blazer",
+            "slug": "ao-blazer-nu",
+            "description": "Áo blazer dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Áo khoác ngoài",
+            "slug": "ao-khoac-ngoai-nu",
+            "description": "Áo khoác ngoài dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Áo vest",
+            "slug": "ao-vest-nu",
+            "description": "Áo vest dành cho nữ",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "ao-khoac-nu-khac",
+            "description": "Các loại áo khoác khác dành cho nữ",
+            "image": null,
+            "order": 6,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Áo len",
+        "slug": "ao-len-nu",
+        "description": "Các loại áo len dành cho nữ",
+        "image": null,
+        "order": 6,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Hoodie và Áo nỉ",
+            "slug": "hoodie-va-ao-ni-nu",
+            "description": "Hoodie và áo nỉ dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo khoác nỉ",
+            "slug": "ao-khoac-ni-nu",
+            "description": "Áo khoác nỉ dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Áo hoodies",
+            "slug": "ao-hoodies-nu",
+            "description": "Áo hoodies dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "ao-len-nu-khac",
+            "description": "Các loại áo len khác dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Bộ",
+        "slug": "bo-nu",
+        "description": "Các loại bộ đồ dành cho nữ",
+        "image": null,
+        "order": 7,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Bộ đồ đôi",
+            "slug": "bo-do-doi-nu",
+            "description": "Bộ đồ đôi dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Bộ đồ gia đình",
+            "slug": "bo-do-gia-dinh-nu",
+            "description": "Bộ đồ gia đình dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Đồ lẻ",
+            "slug": "do-le-nu",
+            "description": "Đồ lẻ dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "bo-nu-khac",
+            "description": "Các loại bộ đồ khác dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Đồ lót",
+        "slug": "do-lot-nu",
+        "description": "Các loại đồ lót dành cho nữ",
+        "image": null,
+        "order": 8,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Bộ đồ lót",
+            "slug": "bo-do-lot-nu",
+            "description": "Bộ đồ lót dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo ngực",
+            "slug": "ao-nguc-nu",
+            "description": "Áo ngực dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Quần lót",
+            "slug": "quan-lot-nu",
+            "description": "Quần lót dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Đồ lót giữ nhiệt",
+            "slug": "do-lot-giu-nhiet-nu",
+            "description": "Đồ lót giữ nhiệt dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Phụ kiện đồ lót",
+            "slug": "phu-kien-do-lot-nu",
+            "description": "Phụ kiện đồ lót dành cho nữ",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          },
+          {
+            "name": "Đồ định hình",
+            "slug": "do-dinh-hinh-nu",
+            "description": "Đồ định hình dành cho nữ",
+            "image": null,
+            "order": 6,
+            "isActive": true
+          },
+          {
+            "name": "Đồ lót bảo hộ",
+            "slug": "do-lot-bao-ho-nu",
+            "description": "Đồ lót bảo hộ dành cho nữ",
+            "image": null,
+            "order": 7,
+            "isActive": true
+          },
+          {
+            "name": "Đồ lót gợi cảm",
+            "slug": "do-lot-goi-cam-nu",
+            "description": "Đồ lót gợi cảm dành cho nữ",
+            "image": null,
+            "order": 8,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "do-lot-nu-khac",
+            "description": "Các loại đồ lót khác dành cho nữ",
+            "image": null,
+            "order": 9,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Đồ ngủ",
+        "slug": "do-ngu-nu",
+        "description": "Các loại đồ ngủ dành cho nữ",
+        "image": null,
+        "order": 9,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Pyjama",
+            "slug": "pyjama-nu",
+            "description": "Pyjama dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Váy ngủ",
+            "slug": "vay-ngu-nu",
+            "description": "Váy ngủ dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Áo choàng ngủ, Áo khoác kimono",
+            "slug": "ao-choang-ngu-ao-khoac-kimono-nu",
+            "description": "Áo choàng ngủ và áo khoác kimono dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "do-ngu-nu-khac",
+            "description": "Các loại đồ ngủ khác dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Đồ Bầu",
+        "slug": "do-bau-nu",
+        "description": "Các loại đồ bầu dành cho nữ",
+        "image": null,
+        "order": 10,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Áo ngực cho con bú",
+            "slug": "ao-nguc-cho-con-bu-nu",
+            "description": "Áo ngực cho con bú dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Đầm bầu",
+            "slug": "dam-bau-nu",
+            "description": "Đầm bầu dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Áo bầu",
+            "slug": "ao-bau-nu",
+            "description": "Áo bầu dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Đồ mặc cho con bú",
+            "slug": "do-mac-cho-con-bu-nu",
+            "description": "Đồ mặc cho con bú dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Bộ đồ bầu",
+            "slug": "bo-do-bau-nu",
+            "description": "Bộ đồ bầu dành cho nữ",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          },
+          {
+            "name": "Quần bầu, Váy bầu",
+            "slug": "quan-bau-vay-bau-nu",
+            "description": "Quần bầu và váy bầu dành cho nữ",
+            "image": null,
+            "order": 6,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "do-bau-nu-khac",
+            "description": "Các loại đồ bầu khác dành cho nữ",
+            "image": null,
+            "order": 7,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Đồ truyền thống",
+        "slug": "do-truyen-thong-nu",
+        "description": "Các loại đồ truyền thống dành cho nữ",
+        "image": null,
+        "order": 11,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Áo",
+            "slug": "ao-truyen-thong-nu",
+            "description": "Áo truyền thống dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Quần và chân váy",
+            "slug": "quan-va-chan-vay-truyen-thong-nu",
+            "description": "Quần và chân váy truyền thống dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Bộ",
+            "slug": "bo-truyen-thong-nu",
+            "description": "Bộ đồ truyền thống dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Đầm",
+            "slug": "dam-truyen-thong-nu",
+            "description": "Đầm truyền thống dành cho nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "do-truyen-thong-nu-khac",
+            "description": "Các loại đồ truyền thống khác dành cho nữ",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Đồ hóa trang",
+        "slug": "do-hoa-trang-nu",
+        "description": "Các loại đồ hóa trang dành cho nữ",
+        "image": null,
+        "order": 12,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Khác",
+            "slug": "do-hoa-trang-nu-khac",
+            "description": "Các loại đồ hóa trang khác dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Vải",
+        "slug": "vai-nu",
+        "description": "Các loại vải dùng trong thời trang nữ",
+        "image": null,
+        "order": 13,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Vải cotton",
+            "slug": "vai-cotton-nu",
+            "description": "Vải cotton dùng trong thời trang nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Vải len",
+            "slug": "vai-len-nu",
+            "description": "Vải len dùng trong thời trang nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Vải nhung, lụa, satin",
+            "slug": "vai-nhung-lua-satin-nu",
+            "description": "Vải nhung, lụa, satin dùng trong thời trang nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Vải da",
+            "slug": "vai-da-nu",
+            "description": "Vải da dùng trong thời trang nữ",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Vải nylon",
+            "slug": "vai-nylon-nu",
+            "description": "Vải nylon dùng trong thời trang nữ",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          },
+          {
+            "name": "Vải denim",
+            "slug": "vai-denim-nu",
+            "description": "Vải denim dùng trong thời trang nữ",
+            "image": null,
+            "order": 6,
+            "isActive": true
+          },
+          {
+            "name": "Vải canvas",
+            "slug": "vai-canvas-nu",
+            "description": "Vải canvas dùng trong thời trang nữ",
+            "image": null,
+            "order": 7,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "vai-nu-khac",
+            "description": "Các loại vải khác dùng trong thời trang nữ",
+            "image": null,
+            "order": 8,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Vớ/ Tất",
+        "slug": "vo-tat-nu",
+        "description": "Các loại vớ và tất dành cho nữ",
+        "image": null,
+        "order": 14,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Tất",
+            "slug": "tat-nu",
+            "description": "Tất dành cho nữ",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Quần tất",
+            "slug": "quan-tat-nu",
+            "description": "Quần tất dành cho nữ",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "vo-tat-nu-khac",
+            "description": "Các loại vớ/tất khác dành cho nữ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Thời Trang Nam",
+    "slug": "thoi-trang-nam",
+    "description": "Danh mục các sản phẩm thời trang dành cho nam",
+    "image": null,
+    "order": 2,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Quần jean",
+        "slug": "quan-jean-nam",
+        "description": "Quần jean dành cho nam",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Hoodie & Áo nỉ",
+        "slug": "hoodie-ao-ni-nam",
+        "description": "Hoodie và áo nỉ dành cho nam",
+        "image": null,
+        "order": 2,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Áo hoodie",
+            "slug": "ao-hoodie-nam",
+            "description": "Áo hoodie dành cho nam",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo nỉ",
+            "slug": "ao-ni-nam",
+            "description": "Áo nỉ dành cho nam",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "hoodie-ao-ni-nam-khac",
+            "description": "Các loại hoodie và áo nỉ khác dành cho nam",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Áo len",
+        "slug": "ao-len-nam",
+        "description": "Áo len dành cho nam",
+        "image": null,
+        "order": 3,
+        "isActive": true
+      },
+      {
+        "name": "Áo khoác",
+        "slug": "ao-khoac-nam",
+        "description": "Các loại áo khoác dành cho nam",
+        "image": null,
+        "order": 4,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Áo khoác mùa đông & Áo choàng",
+            "slug": "ao-khoac-mua-dong-ao-choang-nam",
+            "description": "Áo khoác mùa đông và áo choàng dành cho nam",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo khoác",
+            "slug": "ao-khoac-nam",
+            "description": "Áo khoác dành cho nam",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Áo khoác vest",
+            "slug": "ao-khoac-vest-nam",
+            "description": "Áo khoác vest dành cho nam",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "ao-khoac-nam-khac",
+            "description": "Các loại áo khoác khác dành cho nam",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Com lê",
+        "slug": "com-le-nam",
+        "description": "Các loại com lê dành cho nam",
+        "image": null,
+        "order": 5,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Bộ Com lê",
+            "slug": "bo-com-le-nam",
+            "description": "Bộ com lê dành cho nam",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo Khoác & Blazer",
+            "slug": "ao-khoac-blazer-nam",
+            "description": "Áo khoác và blazer dành cho nam",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Quần âu",
+            "slug": "quan-au-nam",
+            "description": "Quần âu dành cho nam",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Áo vest & Gi lê",
+            "slug": "ao-vest-gi-le-nam",
+            "description": "Áo vest và gi lê dành cho nam",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "com-le-nam-khac",
+            "description": "Các loại com lê khác dành cho nam",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Quần dài",
+        "slug": "quan-dai-nam",
+        "description": "Các loại quần dài dành cho nam",
+        "image": null,
+        "order": 6,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Quần túi hộp",
+            "slug": "quan-tui-hop-nam",
+            "description": "Quần túi hộp dành cho nam",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Quần jogger",
+            "slug": "quan-jogger-nam",
+            "description": "Quần jogger dành cho nam",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Quần dài",
+            "slug": "quan-dai-nam-basic",
+            "description": "Quần dài cơ bản dành cho nam",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "quan-dai-nam-khac",
+            "description": "Các loại quần dài khác dành cho nam",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Quần đùi",
+        "slug": "quan-dui-nam",
+        "description": "Các loại quần đùi dành cho nam",
+        "image": null,
+        "order": 7,
+        "isActive": true
+      },
+      {
+        "name": "Áo",
+        "slug": "ao-nam",
+        "description": "Các loại áo dành cho nam",
+        "image": null,
+        "order": 8,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Áo sơ mi",
+            "slug": "ao-so-mi-nam",
+            "description": "Áo sơ mi dành cho nam",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo polo",
+            "slug": "ao-polo-nam",
+            "description": "Áo polo dành cho nam",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Áo thun",
+            "slug": "ao-thun-nam",
+            "description": "Áo thun dành cho nam",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Áo ba lỗ",
+            "slug": "ao-ba-lo-nam",
+            "description": "Áo ba lỗ dành cho nam",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "ao-nam-khac",
+            "description": "Các loại áo khác dành cho nam",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Đồ lót",
+        "slug": "do-lot-nam",
+        "description": "Các loại đồ lót dành cho nam",
+        "image": null,
+        "order": 9,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Quần lót",
+            "slug": "quan-lot-nam",
+            "description": "Quần lót dành cho nam",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Áo lót",
+            "slug": "ao-lot-nam",
+            "description": "Áo lót dành cho nam",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Đồ lót giữ nhiệt",
+            "slug": "do-lot-giu-nhiet-nam",
+            "description": "Đồ lót giữ nhiệt dành cho nam",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "do-lot-nam-khac",
+            "description": "Các loại đồ lót khác dành cho nam",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Đồ ngủ",
+        "slug": "do-ngu-nam",
+        "description": "Các loại đồ ngủ dành cho nam",
+        "image": null,
+        "order": 10,
+        "isActive": true
+      },
+      {
+        "name": "Bộ",
+        "slug": "bo-nam",
+        "description": "Các loại bộ đồ dành cho nam",
+        "image": null,
+        "order": 11,
+        "isActive": true
+      },
+      {
+        "name": "Trang phục truyền thống",
+        "slug": "trang-phuc-truyen-thong-nam",
+        "description": "Các loại trang phục truyền thống dành cho nam",
+        "image": null,
+        "order": 12,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Áo",
+            "slug": "ao-truyen-thong-nam",
+            "description": "Áo truyền thống dành cho nam",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Quần",
+            "slug": "quan-truyen-thong-nam",
+            "description": "Quần truyền thống dành cho nam",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Bộ",
+            "slug": "bo-truyen-thong-nam",
+            "description": "Bộ đồ truyền thống dành cho nam",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "trang-phuc-truyen-thong-nam-khac",
+            "description": "Các loại trang phục truyền thống khác dành cho nam",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Đồ hóa trang",
+        "slug": "do-hoa-trang-nam",
+        "description": "Các loại đồ hóa trang dành cho nam",
+        "image": null,
+        "order": 13,
+        "isActive": true
+      },
+      {
+        "name": "Trang phục ngành nghề",
+        "slug": "trang-phuc-nganh-nghe-nam",
+        "description": "Các loại trang phục ngành nghề dành cho nam",
+        "image": null,
+        "order": 14,
+        "isActive": true
+      },
+      {
+        "name": "Khác",
+        "slug": "thoi-trang-nam-khac",
+        "description": "Các sản phẩm thời trang nam khác",
+        "image": null,
+        "order": 15,
+        "isActive": true
+      },
+      {
+        "name": "Vớ/ Tất",
+        "slug": "vo-tat-nam",
+        "description": "Các loại vớ và tất dành cho nam",
+        "image": null,
+        "order": 16,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Sắc Đẹp",
+    "slug": "sac-dep",
+    "description": "Danh mục các sản phẩm làm đẹp",
+    "image": null,
+    "order": 3,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Chăm sóc tay, chân & móng",
+        "slug": "cham-soc-tay-chan-mong",
+        "description": "Sản phẩm chăm sóc tay, chân và móng",
+        "image": null,
+        "order": 1,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Chăm sóc tay",
+            "slug": "cham-soc-tay",
+            "description": "Sản phẩm chăm sóc tay",
+            "image": null,
+            "order": 1,
+            "isActive": true,
+            "children": [
+              {
+                "name": "Mặt nạ cho tay",
+                "slug": "mat-na-cho-tay",
+                "description": "Mặt nạ dành cho tay",
+                "image": null,
+                "order": 1,
+                "isActive": true
+              },
+              {
+                "name": "Kem dưỡng, dầu dưỡng & sữa dưỡng",
+                "slug": "kem-duong-dau-duong-sua-duong-tay",
+                "description": "Kem dưỡng, dầu dưỡng và sữa dưỡng cho tay",
+                "image": null,
+                "order": 2,
+                "isActive": true
+              },
+              {
+                "name": "Xà phòng rửa tay",
+                "slug": "xa-phong-rua-tay",
+                "description": "Xà phòng rửa tay",
+                "image": null,
+                "order": 3,
+                "isActive": true
+              },
+              {
+                "name": "Khác",
+                "slug": "cham-soc-tay-khac",
+                "description": "Các sản phẩm chăm sóc tay khác",
+                "image": null,
+                "order": 4,
+                "isActive": true
+              }
+            ]
+          },
+          {
+            "name": "Chăm sóc chân",
+            "slug": "cham-soc-chan",
+            "description": "Sản phẩm chăm sóc chân",
+            "image": null,
+            "order": 2,
+            "isActive": true,
+            "children": [
+              {
+                "name": "Khử mùi hôi chân",
+                "slug": "khu-mui-hoi-chan",
+                "description": "Sản phẩm khử mùi hôi chân",
+                "image": null,
+                "order": 1,
+                "isActive": true
+              },
+              {
+                "name": "Mặt nạ cho chân",
+                "slug": "mat-na-cho-chan",
+                "description": "Mặt nạ dành cho chân",
+                "image": null,
+                "order": 2,
+                "isActive": true
+              },
+              {
+                "name": "Kem dưỡng, dầu dưỡng & sữa dưỡng",
+                "slug": "kem-duong-dau-duong-sua-duong-chan",
+                "description": "Kem dưỡng, dầu dưỡng và sữa dưỡng cho chân",
+                "image": null,
+                "order": 3,
+                "isActive": true
+              },
+              {
+                "name": "Khác",
+                "slug": "cham-soc-chan-khac",
+                "description": "Các sản phẩm chăm sóc chân khác",
+                "image": null,
+                "order": 4,
+                "isActive": true
+              }
+            ]
+          },
+          {
+            "name": "Chăm sóc móng",
+            "slug": "cham-soc-mong",
+            "description": "Sản phẩm chăm sóc móng",
+            "image": null,
+            "order": 3,
+            "isActive": true,
+            "children": [
+              {
+                "name": "Sơn nền & sơn bóng",
+                "slug": "son-nen-son-bong",
+                "description": "Sơn nền và sơn bóng cho móng",
+                "image": null,
+                "order": 1,
+                "isActive": true
+              },
+              {
+                "name": "Sơn móng",
+                "slug": "son-mong",
+                "description": "Sơn móng các loại",
+                "image": null,
+                "order": 2,
+                "isActive": true
+              },
+              {
+                "name": "Dụng cụ tẩy sơn móng",
+                "slug": "dung-cu-tay-son-mong",
+                "description": "Dụng cụ tẩy sơn móng",
+                "image": null,
+                "order": 3,
+                "isActive": true
+              },
+              {
+                "name": "Dưỡng móng",
+                "slug": "duong-mong",
+                "description": "Sản phẩm dưỡng móng",
+                "image": null,
+                "order": 4,
+                "isActive": true
+              },
+              {
+                "name": "Móng giả",
+                "slug": "mong-gia",
+                "description": "Móng giả các loại",
+                "image": null,
+                "order": 5,
+                "isActive": true
+              },
+              {
+                "name": "Hình dán móng",
+                "slug": "hinh-dan-mong",
+                "description": "Hình dán móng các loại",
+                "image": null,
+                "order": 6,
+                "isActive": true
+              },
+              {
+                "name": "Dụng cụ & thiết bị làm móng",
+                "slug": "dung-cu-thiet-bi-lam-mong",
+                "description": "Dụng cụ và thiết bị làm móng",
+                "image": null,
+                "order": 7,
+                "isActive": true
+              },
+              {
+                "name": "Khác",
+                "slug": "cham-soc-mong-khac",
+                "description": "Các sản phẩm chăm sóc móng khác",
+                "image": null,
+                "order": 8,
+                "isActive": true
+              }
+            ]
+          },
+          {
+            "name": "Nail Gel",
+            "slug": "nail-gel",
+            "description": "Sản phẩm nail gel",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "cham-soc-tay-chan-mong-khac",
+            "description": "Các sản phẩm chăm sóc tay, chân và móng khác",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Chăm sóc tóc",
+        "slug": "cham-soc-toc",
+        "description": "Sản phẩm chăm sóc tóc",
+        "image": null,
+        "order": 2,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Dầu gội",
+            "slug": "dau-goi",
+            "description": "Dầu gội các loại",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Thuốc nhuộm tóc",
+            "slug": "thuoc-nhuom-toc",
+            "description": "Thuốc nhuộm tóc các loại",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Sản phẩm dưỡng tóc",
+            "slug": "san-pham-duong-toc",
+            "description": "Sản phẩm dưỡng tóc các loại",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Dầu xả",
+            "slug": "dau-xa",
+            "description": "Dầu xả các loại",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Sản phẩm tạo kiểu tóc",
+            "slug": "san-pham-tao-kieu-toc",
+            "description": "Sản phẩm tạo kiểu tóc các loại",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "cham-soc-toc-khac",
+            "description": "Các sản phẩm chăm sóc tóc khác",
+            "image": null,
+            "order": 6,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Chăm sóc nam giới",
+        "slug": "cham-soc-nam-gioi",
+        "description": "Sản phẩm chăm sóc dành cho nam giới",
+        "image": null,
+        "order": 3,
+        "isActive": true
+      },
+      {
+        "name": "Nước hoa",
+        "slug": "nuoc-hoa",
+        "description": "Các loại nước hoa",
+        "image": null,
+        "order": 4,
+        "isActive": true
+      },
+      {
+        "name": "Trang điểm",
+        "slug": "trang-diem",
+        "description": "Sản phẩm trang điểm",
+        "image": null,
+        "order": 5,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Sức Khỏe",
+    "slug": "suc-khoe",
+    "description": "Danh mục các sản phẩm chăm sóc sức khỏe",
+    "image": null,
+    "order": 4,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Thực phẩm chức năng",
+        "slug": "thuc-pham-chuc-nang",
+        "description": "Các loại thực phẩm chức năng",
+        "image": null,
+        "order": 1,
+        "isActive": true,
+        "children": [
+          {
+            "name": "Hỗ trợ kiểm soát cân nặng",
+            "slug": "ho-tro-kiem-soat-can-nang",
+            "description": "Thực phẩm chức năng hỗ trợ kiểm soát cân nặng",
+            "image": null,
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "name": "Hỗ trợ làm đẹp",
+            "slug": "ho-tro-lam-dep",
+            "description": "Thực phẩm chức năng hỗ trợ làm đẹp",
+            "image": null,
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "name": "Hỗ trợ tăng cơ",
+            "slug": "ho-tro-tang-co",
+            "description": "Thực phẩm chức năng hỗ trợ tăng cơ",
+            "image": null,
+            "order": 3,
+            "isActive": true
+          },
+          {
+            "name": "Hỗ trợ sức khỏe",
+            "slug": "ho-tro-suc-khoe",
+            "description": "Thực phẩm chức năng hỗ trợ sức khỏe",
+            "image": null,
+            "order": 4,
+            "isActive": true
+          },
+          {
+            "name": "Khác",
+            "slug": "thuc-pham-chuc-nang-khac",
+            "description": "Các loại thực phẩm chức năng khác",
+            "image": null,
+            "order": 5,
+            "isActive": true
+          }
+        ]
+      },
+      {
+        "name": "Vật tư y tế",
+        "slug": "vat-tu-y-te",
+        "description": "Các loại vật tư y tế",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      },
+      {
+        "name": "Thuốc không kê đơn",
+        "slug": "thuoc-khong-ke-don",
+        "description": "Các loại thuốc không kê đơn",
+        "image": null,
+        "order": 3,
+        "isActive": true
+      },
+      {
+        "name": "Kiểm tra và theo dõi sức khỏe",
+        "slug": "kiem-tra-va-theo-doi-suc-khoe",
+        "description": "Sản phẩm kiểm tra và theo dõi sức khỏe",
+        "image": null,
+        "order": 4,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Phụ Kiện Thời Trang",
+    "slug": "phu-kien-thoi-trang",
+    "description": "Danh mục các phụ kiện thời trang",
+    "image": null,
+    "order": 5,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Nhẫn",
+        "slug": "nhan",
+        "description": "Các loại nhẫn",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Bông tai",
+        "slug": "bong-tai",
+        "description": "Các loại bông tai",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      },
+      {
+        "name": "Khăn choàng",
+        "slug": "khan-choang",
+        "description": "Các loại khăn choàng",
+        "image": null,
+        "order": 3,
+        "isActive": true
+      },
+      {
+        "name": "Găng tay",
+        "slug": "gang-tay",
+        "description": "Các loại găng tay",
+        "image": null,
+        "order": 4,
+        "isActive": true
+      },
+      {
+        "name": "Phụ kiện tóc",
+        "slug": "phu-kien-toc",
+        "description": "Các loại phụ kiện tóc",
+        "image": null,
+        "order": 5,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Thiết Bị Điện Gia Dụng",
+    "slug": "thiet-bi-dien-gia-dung",
+    "description": "Danh mục các thiết bị điện gia dụng",
+    "image": null,
+    "order": 6,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Máy chiếu & Phụ kiện",
+        "slug": "may-chieu-phu-kien",
+        "description": "Máy chiếu và phụ kiện",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Thiết bị điện gia dụng nhỏ",
+        "slug": "thiet-bi-dien-gia-dung-nho",
+        "description": "Các thiết bị điện gia dụng nhỏ",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Giày Dép Nam",
+    "slug": "giay-dep-nam",
+    "description": "Danh mục giày dép dành cho nam",
+    "image": null,
+    "order": 7,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Bốt",
+        "slug": "bot-nam",
+        "description": "Các loại bốt dành cho nam",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Giày thể thao/ Sneakers",
+        "slug": "giay-the-thao-sneakers-nam",
+        "description": "Giày thể thao và sneakers dành cho nam",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Điện Thoại & Phụ Kiện",
+    "slug": "dien-thoai-phu-kien",
+    "description": "Danh mục điện thoại và phụ kiện",
+    "image": null,
+    "order": 8,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Thẻ sim",
+        "slug": "the-sim",
+        "description": "Các loại thẻ sim",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Máy tính bảng",
+        "slug": "may-tinh-bang",
+        "description": "Các loại máy tính bảng",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Du lịch & Hành lý",
+    "slug": "du-lich-hanh-ly",
+    "description": "Danh mục sản phẩm du lịch và hành lý",
+    "image": null,
+    "order": 9,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Vali",
+        "slug": "vali",
+        "description": "Các loại vali",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Túi du lịch",
+        "slug": "tui-du-lich",
+        "description": "Các loại túi du lịch",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Túi Ví Nữ",
+    "slug": "tui-vi-nu",
+    "description": "Danh mục túi và ví dành cho nữ",
+    "image": null,
+    "order": 10,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Ba lô",
+        "slug": "ba-lo-nu",
+        "description": "Ba lô dành cho nữ",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Cặp laptop",
+        "slug": "cap-laptop-nu",
+        "description": "Cặp laptop dành cho nữ",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Giày Dép Nữ",
+    "slug": "giay-dep-nu",
+    "description": "Danh mục giày dép dành cho nữ",
+    "image": null,
+    "order": 11,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Bốt",
+        "slug": "bot-nu",
+        "description": "Các loại bốt dành cho nữ",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Giày thể thao/ sneaker",
+        "slug": "giay-the-thao-sneaker-nu",
+        "description": "Giày thể thao và sneaker dành cho nữ",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Túi Ví Nam",
+    "slug": "tui-vi-nam",
+    "description": "Danh mục túi và ví dành cho nam",
+    "image": null,
+    "order": 12,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Ba lô",
+        "slug": "ba-lo-nam",
+        "description": "Ba lô dành cho nam",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Cặp laptop",
+        "slug": "cap-laptop-nam",
+        "description": "Cặp laptop dành cho nam",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Đồng Hồ",
+    "slug": "dong-ho",
+    "description": "Danh mục đồng hồ",
+    "image": null,
+    "order": 13,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Đồng hồ nữ",
+        "slug": "dong-ho-nu",
+        "description": "Đồng hồ dành cho nữ",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Đồng hồ nam",
+        "slug": "dong-ho-nam",
+        "description": "Đồng hồ dành cho nam",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Thiết Bị Âm Thanh",
+    "slug": "thiet-bi-am-thanh",
+    "description": "Danh mục thiết bị âm thanh",
+    "image": null,
+    "order": 14,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Tai nghe nhét tai & chụp tai",
+        "slug": "tai-nghe-nhet-tai-chup-tai",
+        "description": "Tai nghe nhét tai và chụp tai",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Máy nghe nhạc",
+        "slug": "may-nghe-nhac",
+        "description": "Các loại máy nghe nhạc",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Thực phẩm và đồ uống",
+    "slug": "thuc-pham-va-do-uong",
+    "description": "Danh mục thực phẩm và đồ uống",
+    "image": null,
+    "order": 15,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Đồ chế biến sẵn",
+        "slug": "do-che-bien-san",
+        "description": "Các loại đồ chế biến sẵn",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Đồ ăn vặt",
+        "slug": "do-an-vat",
+        "description": "Các loại đồ ăn vặt",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Chăm Sóc Thú Cưng",
+    "slug": "cham-soc-thu-cung",
+    "description": "Danh mục sản phẩm chăm sóc thú cưng",
+    "image": null,
+    "order": 16,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Thức ăn cho thú cưng",
+        "slug": "thuc-an-cho-thu-cung",
+        "description": "Các loại thức ăn cho thú cưng",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Phụ kiện cho thú cưng",
+        "slug": "phu-kien-cho-thu-cung",
+        "description": "Các loại phụ kiện cho thú cưng",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Mẹ & Bé",
+    "slug": "me-be",
+    "description": "Danh mục sản phẩm cho mẹ và bé",
+    "image": null,
+    "order": 17,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Đồ dùng du lịch cho bé",
+        "slug": "do-dung-du-lich-cho-be",
+        "description": "Đồ dùng du lịch cho bé",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Đồ dùng ăn dặm cho bé",
+        "slug": "do-dung-an-dam-cho-be",
+        "description": "Đồ dùng ăn dặm cho bé",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Thời trang trẻ em & trẻ sơ sinh",
+    "slug": "thoi-trang-tre-em-tre-so-sinh",
+    "description": "Danh mục thời trang trẻ em và trẻ sơ sinh",
+    "image": null,
+    "order": 18,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Quần áo trẻ em",
+        "slug": "quan-ao-tre-em",
+        "description": "Quần áo dành cho trẻ em",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Phụ kiện trẻ em & trẻ sơ sinh",
+        "slug": "phu-kien-tre-em-tre-so-sinh",
+        "description": "Phụ kiện cho trẻ em và trẻ sơ sinh",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Gaming & Console",
+    "slug": "gaming-console",
+    "description": "Danh mục sản phẩm gaming và console",
+    "image": null,
+    "order": 19,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Máy chơi game",
+        "slug": "may-choi-game",
+        "description": "Các loại máy chơi game",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Phụ kiện console",
+        "slug": "phu-kien-console",
+        "description": "Phụ kiện cho console",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Cameras & Flycam",
+    "slug": "cameras-flycam",
+    "description": "Danh mục máy ảnh và flycam",
+    "image": null,
+    "order": 20,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Máy ảnh",
+        "slug": "may-anh",
+        "description": "Các loại máy ảnh",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Camera giám sát",
+        "slug": "camera-giam-sat",
+        "description": "Các loại camera giám sát",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Nhà cửa & Đời sống",
+    "slug": "nha-cua-doi-song",
+    "description": "Danh mục sản phẩm nhà cửa và đời sống",
+    "image": null,
+    "order": 21,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Chất khử mùi, làm thơm nhà",
+        "slug": "chat-khu-mui-lam-thom-nha",
+        "description": "Chất khử mùi và làm thơm nhà",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Đồ dùng phòng tắm",
+        "slug": "do-dung-phong-tam",
+        "description": "Đồ dùng phòng tắm",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Thể Thao & Dã Ngoại",
+    "slug": "the-thao-da-ngoai",
+    "description": "Danh mục sản phẩm thể thao và dã ngoại",
+    "image": null,
+    "order": 22,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Dụng Cụ Thể Thao & Dã Ngoại",
+        "slug": "dung-cu-the-thao-da-ngoai",
+        "description": "Dụng cụ thể thao và dã ngoại",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Giày Thể Thao",
+        "slug": "giay-the-thao",
+        "description": "Các loại giày thể thao",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Văn Phòng Phẩm",
+    "slug": "van-phong-pham",
+    "description": "Danh mục văn phòng phẩm",
+    "image": null,
+    "order": 23,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Quà Tặng - Giấy Gói",
+        "slug": "qua-tang-giay-goi",
+        "description": "Quà tặng và giấy gói",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Bút Các Loại",
+        "slug": "but-cac-loai",
+        "description": "Các loại bút",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Sở thích & Sưu tầm",
+    "slug": "so-thich-su-tam",
+    "description": "Danh mục sở thích và sưu tầm",
+    "image": null,
+    "order": 24,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Đồ Sưu Tầm",
+        "slug": "do-suu-tam",
+        "description": "Các loại đồ sưu tầm",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Quà Lưu Niệm",
+        "slug": "qua-luu-niem",
+        "description": "Các loại quà lưu niệm",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Ô tô",
+    "slug": "o-to",
+    "description": "Danh mục sản phẩm ô tô",
+    "image": null,
+    "order": 25,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Ô tô",
+        "slug": "o-to",
+        "description": "Các loại ô tô",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Phụ kiện nội thất ô tô",
+        "slug": "phu-kien-noi-that-o-to",
+        "description": "Phụ kiện nội thất ô tô",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Mô tô, xe máy",
+    "slug": "mo-to-xe-may",
+    "description": "Danh mục mô tô và xe máy",
+    "image": null,
+    "order": 26,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Mô tô, xe máy",
+        "slug": "mo-to-xe-may",
+        "description": "Các loại mô tô và xe máy",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Phụ kiện xe máy",
+        "slug": "phu-kien-xe-may",
+        "description": "Phụ kiện xe máy",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "name": "Máy tính & Laptop",
+    "slug": "may-tinh-laptop",
+    "description": "Danh mục máy tính và laptop",
+    "image": null,
+    "order": 27,
+    "isActive": true,
+    "children": [
+      {
+        "name": "Máy Tính Bàn",
+        "slug": "may-tinh-ban",
+        "description": "Các loại máy tính bàn",
+        "image": null,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "name": "Màn Hình",
+        "slug": "man-hinh",
+        "description": "Các loại màn hình",
+        "image": null,
+        "order": 2,
+        "isActive": true
+      }
+    ]
+  }
+]

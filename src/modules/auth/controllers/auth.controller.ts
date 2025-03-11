@@ -60,4 +60,54 @@ export class AuthController {
   async getProfile(@CurrentUser() user: User) {
     return user;
   }
+
+  @UseGuards(JwtAuthGuard)
+  @Get('my-permissions')
+  async getMyPermissions(@CurrentUser() user: User) {
+    // Lấy user với roles và permissions
+    const userWithRoles = await this.authService.getUserWithPermissions(
+      user.id,
+    );
+
+    // Lấy danh sách permissions
+    const permissions = [];
+    userWithRoles.roles.forEach((role) => {
+      role.permissions.forEach((permission) => {
+        permissions.push({
+          code: permission.code,
+          name: permission.name,
+          description: permission.description,
+        });
+      });
+    });
+
+    // Loại bỏ các permission trùng lặp
+    const uniquePermissions = Array.from(
+      new Map(permissions.map((item) => [item.code, item])).values(),
+    );
+
+    // Kiểm tra xem người dùng có phải là admin không
+    const isAdmin = userWithRoles.roles.some((role) => role.name === 'admin');
+
+    return {
+      user: {
+        id: userWithRoles.id,
+        email: userWithRoles.email,
+        firstName: userWithRoles.firstName,
+        lastName: userWithRoles.lastName,
+      },
+      roles: userWithRoles.roles.map((role) => ({
+        name: role.name,
+        description: role.description,
+      })),
+      permissions: uniquePermissions,
+      // Thông tin về quyền quản lý categories
+      categoryPermissions: {
+        canView: uniquePermissions.some((p) => p.code === 'category:read'),
+        canCreate: isAdmin,
+        canUpdate: isAdmin,
+        canDelete: isAdmin,
+      },
+    };
+  }
 }
