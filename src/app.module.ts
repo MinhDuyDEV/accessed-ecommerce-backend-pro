@@ -9,7 +9,7 @@ import { CategoriesModule } from './modules/categories/categories.module';
 import { ProductsModule } from './modules/products/products.module';
 import { CartsModule } from './modules/carts/carts.module';
 import { WishlistsModule } from './modules/wishlists/wishlists.module';
-import { UploadsModule } from './modules/uploads/uploads.module';
+// import { UploadsModule } from './modules/uploads/uploads.module';
 
 @Module({
   imports: [
@@ -23,7 +23,7 @@ import { UploadsModule } from './modules/uploads/uploads.module';
     ProductsModule,
     CartsModule,
     WishlistsModule,
-    UploadsModule,
+    // UploadsModule,
   ],
 })
 export class AppModule {}
