@@ -11,7 +11,11 @@ import {
   HttpCode,
   HttpStatus,
 } from '@nestjs/common';
-import { ProductsService } from '../services/products.service';
+import {
+  ProductsService,
+  ProductWithImageUrl,
+  ProductDetail,
+} from '../services/products.service';
 import { CreateProductDto } from '../dto/create-product.dto';
 import { UpdateProductDto } from '../dto/update-product.dto';
 import { ProductStatus } from '../entities/product.entity';
@@ -36,7 +40,7 @@ export class ProductsController {
   }
 
   @Get()
-  findAll(
+  async findAll(
     @Query('status') status?: ProductStatus,
     @Query('shopId') shopId?: string,
     @Query('categoryId') categoryId?: string,
@@ -47,8 +51,8 @@ export class ProductsController {
     @Query('sort') sort?: string,
     @Query('limit') limit?: number,
     @Query('offset') offset?: number,
-  ) {
-    return this.productsService.findAll({
+  ): Promise<{ products: ProductWithImageUrl[]; total: number }> {
+    return await this.productsService.findAll({
       status,
       shopId,
       categoryId,
@@ -63,12 +67,12 @@ export class ProductsController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
+  findOne(@Param('id') id: string): Promise<ProductDetail> {
     return this.productsService.findOne(id);
   }
 
   @Get('slug/:slug')
-  findBySlug(@Param('slug') slug: string) {
+  findBySlug(@Param('slug') slug: string): Promise<ProductDetail> {
     return this.productsService.findBySlug(slug);
   }
 

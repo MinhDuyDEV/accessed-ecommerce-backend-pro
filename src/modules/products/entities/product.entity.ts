@@ -102,19 +102,19 @@ export class Product {
   @Column({ nullable: true })
   barcode: string;
 
-  @Column({ default: 0 })
+  @Column({ type: 'decimal', precision: 5, scale: 2, default: 0 })
   weight: number;
 
   @Column({ nullable: true })
   weightUnit: string;
 
-  @Column({ default: 0 })
+  @Column({ type: 'decimal', precision: 5, scale: 2, default: 0 })
   length: number;
 
-  @Column({ default: 0 })
+  @Column({ type: 'decimal', precision: 5, scale: 2, default: 0 })
   width: number;
 
-  @Column({ default: 0 })
+  @Column({ type: 'decimal', precision: 5, scale: 2, default: 0 })
   height: number;
 
   @Column({ nullable: true })
@@ -140,6 +140,9 @@ export class Product {
 
   @Column({ default: 0 })
   viewCount: number;
+
+  @Column({ nullable: true })
+  imageUrl: string;
 
   @ManyToOne(() => Shop, (shop) => shop.id)
   @JoinColumn({ name: 'shop_id' })

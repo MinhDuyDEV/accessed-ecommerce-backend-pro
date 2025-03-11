@@ -73,6 +73,10 @@ export class CreateProductDto {
   @IsOptional()
   digitalFileUrl?: string;
 
+  @IsUrl()
+  @IsOptional()
+  imageUrl?: string;
+
   @IsString()
   @IsOptional()
   sku?: string;
