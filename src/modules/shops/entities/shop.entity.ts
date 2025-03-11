@@ -1,13 +1,13 @@
-import { User } from 'src/modules/users/entities/user.entity';
+import { User } from '../../users/entities/user.entity';
 import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
   CreateDateColumn,
   UpdateDateColumn,
-  OneToOne,
   JoinColumn,
   DeleteDateColumn,
+  OneToOne,
 } from 'typeorm';
 
 export enum ShopStatus {
@@ -96,7 +96,7 @@ export class Shop {
   @Column({ nullable: true })
   verifiedAt: Date;
 
-  @OneToOne(() => User)
+  @OneToOne(() => User, (user) => user.shop)
   @JoinColumn({ name: 'owner_id' })
   owner: User;
 

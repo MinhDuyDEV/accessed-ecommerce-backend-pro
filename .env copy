@@ -1,0 +1,42 @@
+# Server
+NODE_ENV=development
+PORT=8000
+API_PREFIX=api
+
+# Database
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+DB_DATABASE=e-commerce
+DB_SYNC=true
+
+# JWT
+JWT_ACCESS_SECRET=your_access_token_secret_for_fallback
+JWT_ACCESS_EXPIRES_IN=15m
+JWT_REFRESH_SECRET=your_refresh_token_secret_for_fallback
+JWT_REFRESH_EXPIRES_IN=7d
+
+# AWS S3
+AWS_S3_BUCKET=your_bucket_name
+AWS_ACCESS_KEY_ID=your_access_key
+AWS_SECRET_ACCESS_KEY=your_secret_key
+AWS_REGION=ap-southeast-1
+
+# Cloudfront
+CLOUDFRONT_URL=https://d1111111111111111111111111111111.cloudfront.net
+
+# Stripe
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_WEBHOOK_SECRET=your_webhook_secret
+
+# Redis
+REDIS_HOST=localhost
+REDIS_PORT=6379
+
+# Email
+MAIL_HOST=smtp.example.com
+MAIL_PORT=587
+MAIL_USER=your_email@example.com
+MAIL_PASSWORD=your_email_password
+MAIL_FROM=noreply@example.com

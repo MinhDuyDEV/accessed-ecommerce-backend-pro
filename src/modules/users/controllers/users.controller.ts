@@ -17,6 +17,7 @@ import { CurrentUser } from '../../auth/decorators/current-user.decorator';
 import { User } from '../entities/user.entity';
 import { UsersService } from '../services/users.service';
 import { PermissionsGuard } from 'src/modules/auth/guards/permission.guard';
+import { BecomeSellerDto } from '../dto/become-seller.dto';
 
 @Controller('users')
 export class UsersController {
@@ -61,5 +62,14 @@ export class UsersController {
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.usersService.remove(id);
+  }
+
+  @Post('become-seller')
+  @UseGuards(JwtAuthGuard)
+  async becomeSeller(
+    @CurrentUser() user: User,
+    @Body() becomeSellerDto: BecomeSellerDto,
+  ) {
+    return this.usersService.becomeSeller(user.id, becomeSellerDto);
   }
 }

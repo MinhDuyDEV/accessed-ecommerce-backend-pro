@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, forwardRef } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -25,13 +25,14 @@ import { RolesGuard } from './guards/roles.guard';
 import { PermissionsGuard } from './guards/permission.guard';
 import { PolicyGuard } from './guards/policy.guard';
 import { CartsModule } from '../carts/carts.module';
+import { PermissionCacheService } from './services/permission-cache.service';
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([Role, Permission, Policy, RefreshToken]),
     PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.register({}),
-    UsersModule,
+    forwardRef(() => UsersModule),
     SharedModule,
     CartsModule,
   ],
@@ -47,6 +48,7 @@ import { CartsModule } from '../carts/carts.module';
     PermissionService,
     PolicyService,
     RefreshTokenService,
+    PermissionCacheService,
     JwtStrategy,
     JwtRefreshStrategy,
     JwtAuthGuard,

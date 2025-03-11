@@ -149,6 +149,18 @@ npm run start:prod
 | POST        | `/api/uploads`      | Tải lên file | Yêu cầu xác thực |
 | DELETE      | `/api/uploads/:key` | Xóa file     | Yêu cầu xác thực |
 
+### Người dùng (Users)
+
+| Phương thức | Endpoint                   | Mô tả                             | Quyền truy cập           | Mô tả chi tiết                                                                                                                                                |
+| ----------- | -------------------------- | --------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GET         | `/api/users`               | Lấy danh sách người dùng          | Yêu cầu xác thực + quyền |                                                                                                                                                               |
+| POST        | `/api/users`               | Tạo người dùng mới                | Yêu cầu xác thực + quyền |                                                                                                                                                               |
+| GET         | `/api/users/me`            | Lấy thông tin người dùng hiện tại | Yêu cầu xác thực         |                                                                                                                                                               |
+| GET         | `/api/users/:id`           | Lấy thông tin người dùng theo ID  | Yêu cầu xác thực + quyền |                                                                                                                                                               |
+| PATCH       | `/api/users/:id`           | Cập nhật thông tin người dùng     | Yêu cầu xác thực + quyền |                                                                                                                                                               |
+| DELETE      | `/api/users/:id`           | Xóa người dùng                    | Yêu cầu xác thực + quyền |                                                                                                                                                               |
+| POST        | `/api/users/become-seller` | Đăng ký trở thành người bán       | Yêu cầu xác thực         | Yêu cầu thông tin: tên cửa hàng, mô tả, địa chỉ chi tiết (địa chỉ, phường/xã, quận/huyện, tỉnh/thành phố, mã bưu điện, quốc gia), số điện thoại, logo, banner |
+
 ## Cấu trúc dự án
 
 ```

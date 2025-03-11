@@ -37,12 +37,19 @@ export class ShopsService {
       throw new ConflictException('User already has a shop');
     }
 
+    // Đảm bảo ownerId được gán đúng
     const shop = this.shopsRepository.create({
       ...createShopDto,
       ownerId: owner.id,
     });
 
-    return this.shopsRepository.save(shop);
+    // Lưu shop vào database
+    const savedShop = await this.shopsRepository.save(shop);
+
+    // Gán shop cho owner
+    owner.shop = savedShop;
+
+    return savedShop;
   }
 
   async findAll(options?: {

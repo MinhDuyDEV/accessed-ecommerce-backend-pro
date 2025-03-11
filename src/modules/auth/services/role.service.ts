@@ -2,6 +2,8 @@ import {
   Injectable,
   NotFoundException,
   ConflictException,
+  Inject,
+  forwardRef,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -10,7 +12,7 @@ import { Permission } from '../entities/permission.entity';
 import { CreateRoleDto } from '../dto/role/create-role.dto';
 import { UpdateRoleDto } from '../dto/role/update-role.dto';
 import { PermissionCacheService } from './permission-cache.service';
-import { UsersService } from '@/modules/users/services/users.service';
+import { UsersService } from '../../users/services/users.service';
 
 @Injectable()
 export class RoleService {
@@ -20,6 +22,7 @@ export class RoleService {
     @InjectRepository(Permission)
     private permissionRepository: Repository<Permission>,
     private permissionCacheService: PermissionCacheService,
+    @Inject(forwardRef(() => UsersService))
     private usersService: UsersService,
   ) {}
 
@@ -65,6 +68,7 @@ export class RoleService {
   }
 
   async findByName(name: string): Promise<Role> {
+    console.log('name', name);
     const role = await this.roleRepository.findOne({
       where: { name },
       relations: ['permissions'],

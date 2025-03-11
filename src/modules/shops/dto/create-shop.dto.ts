@@ -4,6 +4,7 @@ import {
   IsOptional,
   IsObject,
   IsUrl,
+  IsUUID,
 } from 'class-validator';
 
 export class CreateShopDto {
@@ -26,6 +27,10 @@ export class CreateShopDto {
   @IsUrl()
   @IsOptional()
   banner?: string;
+
+  @IsUUID()
+  @IsOptional()
+  ownerId?: string;
 
   @IsObject()
   @IsOptional()

@@ -9,12 +9,14 @@ import {
   BeforeInsert,
   BeforeUpdate,
   OneToMany,
+  OneToOne,
 } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 import { Role } from '../../auth/entities/role.entity';
 import { RefreshToken } from '../../auth/entities/refresh-token.entity';
 import { Address } from './address.entity';
 import { Exclude } from 'class-transformer';
+import { Shop } from '../../shops/entities/shop.entity';
 
 export enum UserStatus {
   ACTIVE = 'active',
@@ -88,6 +90,9 @@ export class User {
 
   @Column({ nullable: true, type: 'jsonb' })
   attributes: Record<string, any>;
+
+  @OneToOne(() => Shop, (shop) => shop.owner)
+  shop: Shop;
 
   @CreateDateColumn()
   createdAt: Date;
