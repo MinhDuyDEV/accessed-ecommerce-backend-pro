@@ -56,11 +56,6 @@ export class AuthService {
       throw new UnauthorizedException('Invalid credentials');
     }
 
-    // Merge giỏ hàng nếu có sessionId
-    if (loginDto.sessionId) {
-      await this.cartsService.mergeCartsOnLogin(loginDto.sessionId, user.id);
-    }
-
     return this.generateTokens(user, req);
   }
 
@@ -78,6 +73,9 @@ export class AuthService {
         user.roles = [customerRole];
         await this.usersService.save(user);
       }
+
+      // Tạo giỏ hàng cho người dùng mới
+      await this.cartsService.create({ userId: user.id });
 
       return user;
     } catch (error) {
@@ -110,6 +108,11 @@ export class AuthService {
 
   async getUserWithPermissions(userId: string): Promise<User> {
     return this.usersService.findOneWithRoles(userId);
+  }
+
+  async getUserCart(userId: string): Promise<any> {
+    // Tìm hoặc tạo giỏ hàng cho người dùng
+    return this.cartsService.findByUser(userId);
   }
 
   private async generateTokens(user: User, req: Request): Promise<TokensDto> {

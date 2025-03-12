@@ -14,9 +14,9 @@ export class CreateCartItemDto {
   @IsUUID()
   productId: string;
 
-  @IsOptional()
+  @IsNotEmpty()
   @IsUUID()
-  variantId?: string;
+  variantId: string;
 
   @IsNotEmpty()
   @IsInt()

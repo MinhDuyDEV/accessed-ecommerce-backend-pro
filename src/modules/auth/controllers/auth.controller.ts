@@ -58,7 +58,17 @@ export class AuthController {
   @UseGuards(JwtAuthGuard)
   @Get('me')
   async getProfile(@CurrentUser() user: User) {
-    return user;
+    // Lấy thông tin giỏ hàng của người dùng
+    const cart = await this.authService.getUserCart(user.id);
+
+    // Trả về thông tin người dùng kèm theo thông tin giỏ hàng
+    return {
+      ...user,
+      cart: {
+        id: cart.id,
+        itemCount: cart.itemCount,
+      },
+    };
   }
 
   @UseGuards(JwtAuthGuard)

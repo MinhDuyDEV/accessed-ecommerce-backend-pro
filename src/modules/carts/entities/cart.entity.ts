@@ -23,9 +23,6 @@ export class Cart {
   @JoinColumn({ name: 'userId' })
   user: User;
 
-  @Column({ nullable: true })
-  sessionId: string;
-
   @Column({ type: 'decimal', precision: 10, scale: 2, default: 0 })
   subtotal: number;
 

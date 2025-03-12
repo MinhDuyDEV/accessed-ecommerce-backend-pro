@@ -212,9 +212,6 @@ export class ProductsService {
     limit?: number;
     offset?: number;
   }): Promise<{ products: ProductWithImageUrl[]; total: number }> {
-    if (options?.search) {
-      console.log('search', options.search);
-    }
     const queryBuilder = this.productRepository
       .createQueryBuilder('product')
       .leftJoinAndSelect('product.categories', 'category');
@@ -246,8 +243,8 @@ export class ProductsService {
 
     if (options?.search) {
       queryBuilder.andWhere(
-        '(LOWER(product.name) LIKE :search OR LOWER(product.description) LIKE :search)',
-        { search: `%${options.search.toLowerCase()}%` },
+        '(product.name ILIKE :search OR product.description ILIKE :search)',
+        { search: `%${options.search}%` },
       );
     }
 
