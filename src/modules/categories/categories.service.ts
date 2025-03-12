@@ -51,9 +51,7 @@ export class CategoriesService {
   }
 
   async findAll(): Promise<Category[]> {
-    return this.categoryRepository.find({
-      order: { order: 'ASC' },
-    });
+    return this.categoryRepository.findRoots();
   }
 
   async findAllTree(): Promise<Category[]> {
