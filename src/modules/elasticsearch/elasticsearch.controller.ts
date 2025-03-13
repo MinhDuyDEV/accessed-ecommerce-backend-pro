@@ -44,6 +44,9 @@ export class ElasticsearchController {
     if (queryParams.isFeatured)
       queryParams.isFeatured = queryParams.isFeatured === 'true';
 
+    // Truyền slug trực tiếp nếu có
+    // Không cần xử lý đặc biệt vì slug là chuỗi đơn
+
     const searchResults =
       await this.productSearchService.searchProducts(queryParams);
 

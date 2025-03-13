@@ -177,6 +177,7 @@ export class ProductSearchService {
     try {
       const {
         query = '',
+        slug,
         page = 1,
         limit = 10,
         sort = 'createdAt:desc',
@@ -213,6 +214,11 @@ export class ProductSearchService {
             fuzziness: 'AUTO',
           },
         });
+      }
+
+      // Slug search
+      if (slug) {
+        filter.push({ term: { slug } });
       }
 
       // Status filter
@@ -422,6 +428,7 @@ export class ProductSearchService {
  */
 export interface ProductSearchOptions {
   query?: string;
+  slug?: string;
   page?: number;
   limit?: number;
   sort?: string;
