@@ -158,21 +158,21 @@ export class ElasticsearchService {
     }
   }
 
+  /**
+   * Delete an index
+   */
   async deleteIndex(indexName: string) {
+    const fullIndexName = `${this.indexPrefix}${indexName}`;
+
     try {
-      const indexExists = await this.indexExists(indexName);
-      if (!indexExists) {
-        this.logger.log(`Index ${indexName} does not exist`);
-        return;
-      }
-
       await this.elasticsearchService.indices.delete({
-        index: indexName,
+        index: fullIndexName,
       });
-
-      this.logger.log(`Deleted index ${indexName}`);
+      this.logger.log(`Index ${fullIndexName} deleted successfully`);
     } catch (error) {
-      this.logger.error(`Error deleting index ${indexName}: ${error.message}`);
+      this.logger.error(
+        `Error deleting index ${fullIndexName}: ${error.message}`,
+      );
       throw error;
     }
   }
