@@ -52,4 +52,11 @@ export default () => ({
     password: process.env.MAIL_PASSWORD,
     from: process.env.MAIL_FROM,
   },
+
+  elasticsearch: {
+    node: process.env.ELASTICSEARCH_NODE || 'http://localhost:9200',
+    username: process.env.ELASTICSEARCH_USERNAME,
+    password: process.env.ELASTICSEARCH_PASSWORD,
+    indexPrefix: process.env.ELASTICSEARCH_INDEX_PREFIX || 'ecommerce_',
+  },
 });

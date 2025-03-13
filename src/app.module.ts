@@ -10,6 +10,7 @@ import { ProductsModule } from './modules/products/products.module';
 import { CartsModule } from './modules/carts/carts.module';
 import { WishlistsModule } from './modules/wishlists/wishlists.module';
 // import { UploadsModule } from './modules/uploads/uploads.module';
+import { ElasticsearchModule } from './modules/elasticsearch/elasticsearch.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { WishlistsModule } from './modules/wishlists/wishlists.module';
     ProductsModule,
     CartsModule,
     WishlistsModule,
+    ElasticsearchModule,
     // UploadsModule,
   ],
 })

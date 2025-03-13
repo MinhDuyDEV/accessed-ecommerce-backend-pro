@@ -14,6 +14,7 @@ import { ProductReviewsService } from './services/product-reviews.service';
 import { ShopsModule } from '../shops/shops.module';
 import { SharedModule } from '../shared/shared.module';
 import { Category } from '../categories/entities/category.entity';
+import { ElasticsearchModule } from '../elasticsearch/elasticsearch.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { Category } from '../categories/entities/category.entity';
     ]),
     ShopsModule,
     SharedModule,
+    ElasticsearchModule,
   ],
   controllers: [
     ProductsController,

@@ -18,6 +18,7 @@ import { Category } from '../../categories/entities/category.entity';
 import { CreateProductDto } from '../dto/create-product.dto';
 import { UpdateProductDto } from '../dto/update-product.dto';
 import { ShopsService } from '../../shops/shops.service';
+import { ProductSearchService } from '../../elasticsearch/product-search.service';
 
 // Interface cho sản phẩm với các trường bổ sung
 export interface ProductWithImageUrl extends Omit<Product, 'imageUrl'> {
@@ -95,6 +96,7 @@ export class ProductsService {
     @InjectRepository(Category)
     private categoryRepository: Repository<Category>,
     private shopsService: ShopsService,
+    private productSearchService: ProductSearchService,
   ) {}
 
   async create(
@@ -193,7 +195,19 @@ export class ProductsService {
       }
 
       // Trả về sản phẩm đã được định dạng thông qua findOne
-      return this.findOne(savedProduct.id) as unknown as Product;
+      const finalProduct = (await this.findOne(
+        savedProduct.id,
+      )) as unknown as Product;
+
+      // Index sản phẩm vào Elasticsearch
+      try {
+        await this.productSearchService.indexProduct(finalProduct);
+      } catch (error) {
+        console.error('Failed to index product in Elasticsearch:', error);
+        // Không throw lỗi ở đây để không ảnh hưởng đến luồng chính
+      }
+
+      return finalProduct;
     } catch (error) {
       console.error('Error creating product:', error);
       throw error;
@@ -589,11 +603,18 @@ export class ProductsService {
       product.categories = categories;
     }
 
-    // Lưu sản phẩm
-    await this.productRepository.save(product);
+    // Lưu sản phẩm đã cập nhật vào database
+    const updatedProduct = await this.productRepository.save(product);
 
-    // Trả về sản phẩm đã được định dạng thông qua findOne
-    return this.findOne(id) as unknown as Product;
+    // Cập nhật sản phẩm trong Elasticsearch
+    try {
+      await this.productSearchService.updateProduct(updatedProduct);
+    } catch (error) {
+      console.error('Failed to update product in Elasticsearch:', error);
+      // Không throw lỗi ở đây để không ảnh hưởng đến luồng chính
+    }
+
+    return updatedProduct;
   }
 
   async updateStatus(
@@ -618,7 +639,19 @@ export class ProductsService {
     });
 
     product.status = status;
-    return this.productRepository.save(product);
+
+    // Lưu sản phẩm đã cập nhật vào database
+    const updatedProduct = await this.productRepository.save(product);
+
+    // Cập nhật sản phẩm trong Elasticsearch
+    try {
+      await this.productSearchService.updateProduct(updatedProduct);
+    } catch (error) {
+      console.error('Failed to update product status in Elasticsearch:', error);
+      // Không throw lỗi ở đây để không ảnh hưởng đến luồng chính
+    }
+
+    return updatedProduct;
   }
 
   async remove(id: string, userId: string): Promise<void> {
@@ -634,6 +667,14 @@ export class ProductsService {
     }
 
     await this.productRepository.softDelete(id);
+
+    // Xóa sản phẩm khỏi Elasticsearch
+    try {
+      await this.productSearchService.removeProduct(id);
+    } catch (error) {
+      console.error('Failed to remove product from Elasticsearch:', error);
+      // Không throw lỗi ở đây để không ảnh hưởng đến luồng chính
+    }
   }
 
   async incrementViewCount(id: string): Promise<void> {

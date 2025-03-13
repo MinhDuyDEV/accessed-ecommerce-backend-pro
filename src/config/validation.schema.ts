@@ -45,4 +45,10 @@ export const validationSchema = Joi.object({
   MAIL_USER: Joi.string().optional(),
   MAIL_PASSWORD: Joi.string().optional(),
   MAIL_FROM: Joi.string().optional(),
+
+  // Elasticsearch
+  ELASTICSEARCH_NODE: Joi.string().default('http://localhost:9200'),
+  ELASTICSEARCH_USERNAME: Joi.string().allow('').optional(),
+  ELASTICSEARCH_PASSWORD: Joi.string().allow('').optional(),
+  ELASTICSEARCH_INDEX_PREFIX: Joi.string().default('ecommerce_'),
 });
