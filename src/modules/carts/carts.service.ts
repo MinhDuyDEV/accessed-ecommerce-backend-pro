@@ -127,6 +127,17 @@ export class CartsService {
         item.variantId === createCartItemDto.variantId,
     );
 
+    // Kiểm tra số lượng tồn kho
+    const requestedQuantity = existingItem
+      ? existingItem.quantity + createCartItemDto.quantity
+      : createCartItemDto.quantity;
+
+    if (requestedQuantity > variant.quantity) {
+      throw new BadRequestException(
+        `Not enough stock. Available: ${variant.quantity}, Requested: ${requestedQuantity}`,
+      );
+    }
+
     if (existingItem) {
       // Update quantity if item already exists
       existingItem.quantity += createCartItemDto.quantity;
@@ -190,6 +201,25 @@ export class CartsService {
       updateCartItemDto.quantity < 1
     ) {
       return this.removeItem(cartId, itemId);
+    }
+
+    // Kiểm tra số lượng tồn kho nếu có cập nhật số lượng
+    if (updateCartItemDto.quantity !== undefined) {
+      const variant = await this.productVariantRepository.findOne({
+        where: { id: item.variantId },
+      });
+
+      if (!variant) {
+        throw new NotFoundException(
+          `Product variant with ID ${item.variantId} not found`,
+        );
+      }
+
+      if (updateCartItemDto.quantity > variant.quantity) {
+        throw new BadRequestException(
+          `Not enough stock. Available: ${variant.quantity}, Requested: ${updateCartItemDto.quantity}`,
+        );
+      }
     }
 
     // Apply updates
